@@ -1,9 +1,7 @@
-import { increment, getCounter } from './services/counter/counter';
-import messageOfTheDay from './services/messageOfTheDay/messageOfTheDay';
+import Vue from 'vue';
+import App from './components/App.vue';
 
-increment();
-console.log(getCounter());
-increment();
-console.log(getCounter());
-
-messageOfTheDay();
+new Vue({
+  el: '#app',
+  render: h => h(App),
+});
