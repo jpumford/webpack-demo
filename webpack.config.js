@@ -6,4 +6,12 @@ module.exports = {
     path: path.resolve(__dirname),
     filename: 'bundle.js',
   },
+  module: {
+    rules: [
+      {
+        test: /\.txt$/,
+        use: 'raw-loader',
+      },
+    ],
+  },
 };

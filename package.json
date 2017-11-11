@@ -1,5 +1,9 @@
 {
   "scripts": {
     "build": "webpack"
+  },
+  "devDependencies": {
+    "raw-loader": "^0.5.1",
+    "webpack": "^3.8.1"
   }
 }
